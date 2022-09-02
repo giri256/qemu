@@ -2570,13 +2570,13 @@ int ide_init_drive(IDEState *s, BlockBackend *blk, IDEDriveKind kind,
     } else {
         switch (kind) {
         case IDE_CD:
-            strcpy(s->drive_model_str, "QEMU DVD-ROM");
+            strcpy(s->drive_model_str, "OPTIARC DVD RW AD-5680H");
             break;
         case IDE_CFATA:
-            strcpy(s->drive_model_str, "QEMU MICRODRIVE");
+            strcpy(s->drive_model_str, "CR32 MICRODRIVE");
             break;
         default:
-            strcpy(s->drive_model_str, "QEMU HARDDISK");
+            strcpy(s->drive_model_str, "WD5000AAKS-40V28O");
             break;
         }
     }

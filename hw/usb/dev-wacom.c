@@ -231,7 +231,7 @@ static int usb_mouse_poll(USBWacomState *s, uint8_t *buf, int len)
 
     if (!s->mouse_grabbed) {
         s->eh_entry = qemu_add_mouse_event_handler(usb_mouse_event, s, 0,
-                        "QEMU PenPartner tablet");
+                        "CR32 PenPartner tablet");
         qemu_activate_mouse_event_handler(s->eh_entry);
         s->mouse_grabbed = 1;
     }
@@ -269,7 +269,7 @@ static int usb_wacom_poll(USBWacomState *s, uint8_t *buf, int len)
 
     if (!s->mouse_grabbed) {
         s->eh_entry = qemu_add_mouse_event_handler(usb_wacom_event, s, 1,
-                        "QEMU PenPartner tablet");
+                        "CR32 PenPartner tablet");
         qemu_activate_mouse_event_handler(s->eh_entry);
         s->mouse_grabbed = 1;
     }
