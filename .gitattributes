@@ -1,4 +1,4 @@
-text eol=lf
+* text=auto eol=lf
 *.c.inc         diff=c
 *.h.inc         diff=c
 *.m             diff=objc
